@@ -1,10 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './modal.css'
 import close from './times-solid.svg'
 
 function WhModal(props) {
 
     const [isModal, setIsModal] = useState("vh_modal")
+
+    useEffect(() => {
+        if (props.isModal) {
+            setIsModal(props.isModal)
+        }
+    }, [props.isModal])
 
     const closeModal = () => {
         setIsModal("hide_modal")
