@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './modal.css'
 import close from './times-solid.svg'
 
-function WhModal(props) {
+const WhModal = (props) => {
 
     const [isModal, setIsModal] = useState("false")
 
