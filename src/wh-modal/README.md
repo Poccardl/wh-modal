@@ -39,7 +39,7 @@ To hide the modal you must pass the value `false` to the argument `isModal={'fal
 To modify the content of modal you must use the argument `content={}`.
 To change the appearance of the modal you must pass an object to the argument `modalStyle={}`
 
-exemple :
+example :
 
 ```JSX
 import { WhModal } from 'wh-modal'
