@@ -1,0 +1,30 @@
+.vh_modal {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: black;
+}
+
+.hide_modal {
+    display: none;
+}
+
+.close_btn {
+    /* close_btn */
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+.close_btn img {
+    width: 10px;
+    cursor: pointer;
+}
