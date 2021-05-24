@@ -19,7 +19,7 @@ function WhModal(props) {
     return (
         <>
         <div className={isModal} style={props.modalStyle}>
-            {props.content ? <p>{props.content}</p> : <p>Add cotent option</p>}
+            {props.content ? <p>{props.content}</p> : <p>Add content text</p>}
             <span className="close_btn">
                 <img onClick={closeModal} src={close} alt="" />
             </span>
