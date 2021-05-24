@@ -10,7 +10,9 @@ You can install wh-modal with [npm](https://www.npmjs.com/)
 
 You need to import component
 ```JSX
-import { WhModal } from 'wh-modal'
+import WhModal from 'wh-modal'
+
+<WhModal />
 ```
 
 # Opening
@@ -19,7 +21,7 @@ The modal is invisible by default.
 To display the modal you must pass the value `true` to the argument `isModal={'true'}`
 
 ```JSX
-import { WhModal } from 'wh-modal'
+import WhModal from 'wh-modal'
 
 function MyComponent() {
     return (
@@ -42,7 +44,7 @@ To change the appearance of the modal you must pass an object to the argument `m
 example :
 
 ```JSX
-import { WhModal } from 'wh-modal'
+import WhModal from 'wh-modal'
 
 function MyComponent() {
     return (
