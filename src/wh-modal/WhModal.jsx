@@ -4,7 +4,7 @@ import close from './times-solid.svg'
 
 function WhModal(props) {
 
-    const [isModal, setIsModal] = useState("vh_modal")
+    const [isModal, setIsModal] = useState("false")
 
     useEffect(() => {
         if (props.isModal) {
@@ -13,12 +13,12 @@ function WhModal(props) {
     }, [props.isModal])
 
     const closeModal = () => {
-        setIsModal("hide_modal")
+        setIsModal("false")
     }
 
     return (
         <>
-        <div className={isModal} style={props.modalStyle}>
+        <div className={`vh_modal ${isModal}`} style={props.modalStyle}>
             {props.content ? <p>{props.content}</p> : <p>Add content text</p>}
             <span className="close_btn">
                 <img onClick={closeModal} src={close} alt="" />

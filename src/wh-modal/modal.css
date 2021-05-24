@@ -1,4 +1,4 @@
-.vh_modal {
+.vh_modal.true {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -13,18 +13,15 @@
     border-radius: 5px;
     border-color: black;
 }
-
-.hide_modal {
+.vh_modal.false {
     display: none;
 }
-
-.close_btn {
-    /* close_btn */
+.vh_modal .close_btn {
     position: absolute;
     right: 2px;
     top: 2px;
 }
-.close_btn img {
+.vh_modal .close_btn img {
     width: 10px;
     cursor: pointer;
 }
