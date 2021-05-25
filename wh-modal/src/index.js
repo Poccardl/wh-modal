@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import './modal.css'
-import close from './times-solid.svg'
+import './index.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const WhModal = (props) => {
+function WhModal(props) {
 
     const [isModal, setIsModal] = useState("false")
 
@@ -21,7 +21,7 @@ const WhModal = (props) => {
         <div className={`vh_modal ${isModal}`} style={props.modalStyle}>
             {props.content ? <p>{props.content}</p> : <p>Add content text</p>}
             <span className="close_btn">
-                <img onClick={closeModal} src={close} alt="" />
+                <FontAwesomeIcon onClick={closeModal} icon={faTimes}/>
             </span>
         </div>
         </>
