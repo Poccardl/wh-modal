@@ -1,8 +1,8 @@
 {
   "name": "wh-modal",
-  "version": "1.0.6",
+  "version": "1.0.15",
   "description": "Custom modal for Wealth Health company.",
-  "main": "./src/index.js",
+  "main": "build/index.js",
   "scripts": {
     "build": "webpack"
   },
@@ -22,6 +22,8 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
-    "react": "^17.0.2"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0"
   }
 }

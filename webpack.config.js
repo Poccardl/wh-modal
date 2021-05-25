@@ -1,4 +1,4 @@
-var path = require("path");
+var path = require("path")
 
 module.exports = {
   mode: "production",
@@ -13,14 +13,16 @@ module.exports = {
       { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
       {
         test: /\.css$/,
-        loader: "css-loader"
+        use: ['style-loader', 'css-loader'],
       }
     ]
   },
   externals: {
-    core: "@fortawesome/fontawesome-svg-core",
-    icons: "@fortawesome/free-solid-svg-icons",
-    fontawesome: "@fortawesome/react-fontawesome",
-    react: "react"
+    fontawesome_svg_core: "@fortawesome/fontawesome-svg-core",
+    free_solid_svg_icons: "@fortawesome/free-solid-svg-icons",
+    react_fontawesome: "@fortawesome/react-fontawesome",
+    react: "react",
+    react_dom: "react-dom",
+    react_router_dom: "react-router-dom"
   }
-};
+}

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import './index.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
-function WhModal(props) {
+export function WhModal(props) {
 
     const [isModal, setIsModal] = useState("false")
 
@@ -27,5 +28,3 @@ function WhModal(props) {
         </>
     )
 }
-
-export default WhModal
