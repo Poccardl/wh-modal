@@ -21,7 +21,7 @@
     right: 2px;
     top: 2px;
 }
-.vh_modal .close_btn img {
+.vh_modal .close_btn svg {
     width: 10px;
     cursor: pointer;
 }

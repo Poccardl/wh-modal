@@ -1,6 +1,6 @@
 {
   "name": "wh-modal",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "Custom modal for Wealth Health company.",
   "main": "build/index.js",
   "scripts": {
